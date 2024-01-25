@@ -1,3 +1,8 @@
+"""
+Sourced from
+Obecjt Tracking: https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+Counter Features: https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
+"""
 import numpy as np
 import cv2 as cv
 
@@ -18,7 +23,7 @@ while True:
     # Our operations on the frame come here
     hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
     
-    # define range of blue color in HSV
+    # define range of dark blue color in HSV
     lower_blue = np.array([100, 100, 0])   
     upper_blue = np.array([140, 255, 255]) 
 

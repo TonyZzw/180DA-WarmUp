@@ -1,0 +1,18 @@
+1. MQTT enables efficient message broadcasting to multiple users on a single network. However, 
+it's challenging to identify the sender of a particular message and to store messages for later retrieval, 
+as messages do not persist on the network. A typical communications lag time with MQTT could be around 0.5 seconds. 
+Due to our project's web service will be built by Node.JS, we will consider MQTT as alternative method.
+
+2.
+* Yes
+
+* The length of a phrase is less of an issue for accuracy, 
+but clarity and distinctiveness of speech are important factors.
+
+* Works as expect. Don't need to improve.
+
+a) Distinguish between simple command instructions, e.g. up, down, left and right
+b) We expect simple speech recognition, basically single word oriented
+c) We only need to be able to distinguish simple words. Because we are a turn-based game, 
+we don't need to have a particularly fast reaction time, and it won't affect the progress of the game.
+d) I think the current hardware is sufficient.

@@ -1,0 +1,13 @@
+1. Using HSV color space is typically more effective than RGB for tracking objects in varying lighting conditions. 
+The cam tracks a dark blue object by setting a wide HSV threshold range, lower_blue = np.array([100, 100, 0]) and upper_blue = np.array([140, 255, 255]). 
+It isolates the object using color thresholding, finds contours, and draws a bounding box around the largest contour.
+
+2. The tracking ability of the object is impacted by lighting changes: 
+it decreases in very bright conditions and fails in very low light.
+
+3. Adjusting the phone's brightness affects the tracking ability: 
+increasing brightness makes tracking harder, while very low brightness leads to poor and unstable tracking.
+
+4. I used a blue sticky note and a mobile phone as experimental objects. 
+Changing the lighting conditions around the sticky note slightly alters the brightness of its color. 
+However, changing the lighting conditions around the mobile phone does not have a noticeable effect on its color.
